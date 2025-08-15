@@ -1,0 +1,17 @@
+[project]
+name = "populyze"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pyside6>=6.9.1",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.17.1",
+    "pre-commit>=4.3.0",
+    "pyinstaller>=6.15.0",
+    "ruff>=0.12.8",
+]
