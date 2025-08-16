@@ -1,10 +1,11 @@
-from loguru import logger
-import sys
 import os
-from datetime import datetime
 import pathlib
-from platformdirs import user_data_dir
+import sys
+from datetime import datetime
 from typing import Any, TextIO
+
+from loguru import logger
+from platformdirs import user_data_dir
 
 console_sink_id = None
 file_sink_id = None

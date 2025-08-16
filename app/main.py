@@ -1,9 +1,11 @@
 import sys
+
 from PySide6.QtWidgets import QApplication
+
 from app.controller.main_controller import MainController
-from app.view.main_window import MainWindow
+from app.logger import logger, setup_logger
 from app.model.video_stream import VideoStream
-from app.logger import setup_logger, logger
+from app.view.main_window import MainWindow
 
 setup_logger(app_name='PopuLyze', app_author='redzuone', log_file_suffix='populyze')
 logger.debug('Starting..')
