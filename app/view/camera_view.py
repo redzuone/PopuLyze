@@ -1,5 +1,7 @@
 from PySide6 import QtCore, QtWidgets
 
+from app.view.custom_widgets import JoystickButton
+
 
 class CameraView(QtWidgets.QWidget):
     def __init__(self) -> None:
@@ -34,3 +36,6 @@ class CameraControlView(QtWidgets.QWidget):
         stop_btn = QtWidgets.QPushButton('Stop')
         layout.addWidget(stop_btn, 1, 0)
         stop_btn.clicked.connect(self.stop_clicked.emit)
+        self.joystick_btn = JoystickButton()
+        layout.addWidget(self.joystick_btn)
+        self.joystick_btn.setFixedSize(45, 45)
